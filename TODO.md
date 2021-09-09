@@ -5,14 +5,14 @@
 [x] create HTML skeleton for user to input to do list
     -input for task
     -submit button 
-[] build server with boilerplate language
+[x] build server with boilerplate language
 [] connect server to database with pg pool
 [] create ERD for database:
     - id
     - 'task' varchar(300)
     - complete (boolean)
 [] create table and insert dummy data in database.sql file
-[] create router for tasks
+[x] create router for tasks
     [] GET route (server)
     [] POST route (server)
     [] PUT route (server)
@@ -23,7 +23,7 @@
     - need 'complete' button 
 [] client side AJAX DELETE
     - need 'delete' button
-[] display the tasks on the DOM
+[] display the tasks on the DOM and on page load
 [] add some CSS/Bootstrap
 [] write readme - add some screengrabs
 [] deploy to Heroku
