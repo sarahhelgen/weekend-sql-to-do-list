@@ -1,7 +1,7 @@
 ## To Do List for To Do List App!
 
-[] install express and pg
-[] build folder structure for app
+[x] install express and pg
+[x] build folder structure for app
 [] create HTML skeleton for user to input to do list
     -input for task
     -submit button 
@@ -25,4 +25,5 @@
     - need 'delete' button
 [] display the tasks on the DOM
 [] add some CSS/Bootstrap
-[] write readme
+[] write readme - add some screengrabs
+[] deploy to Heroku
