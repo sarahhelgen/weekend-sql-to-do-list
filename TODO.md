@@ -2,7 +2,7 @@
 
 [x] install express and pg
 [x] build folder structure for app
-[] create HTML skeleton for user to input to do list
+[x] create HTML skeleton for user to input to do list
     -input for task
     -submit button 
 [] build server with boilerplate language
