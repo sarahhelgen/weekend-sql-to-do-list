@@ -13,11 +13,11 @@
     - complete (boolean) - default to false
 [x] create table and insert dummy data in database.sql file
 [x] create router for tasks
-    [] GET route (server)
+    [x] GET route (server)
     [x] POST route (server)
     [] PUT route (server)
     [] DELETE route (server)
-[] client side AJAX GET
+[x] client side AJAX GET
 [x] client side AJAX POST
 [] client side AJAX PUT
     - need 'complete' button 
