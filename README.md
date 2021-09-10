@@ -57,4 +57,12 @@ These are the steps I took to get there:
 ## Built With
 * HTML, CSS, Javascript, JQuery, Node.js, Express, PG, Postgresql
 
+## Acknowledgement
+
+Thanks to my instructors Chris, Liz, Dane, and Kris and everyone at Prime Digital Academy for helping me learn the technical skills to build this!
+
+## Support
+
+If you have feedback or issues with the app, please reach out to me at sarah.helgen@gmail.com
+
 
