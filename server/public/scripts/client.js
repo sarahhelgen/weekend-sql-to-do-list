@@ -8,6 +8,7 @@ function readyNow() {
     console.log('DOM Ready!');
     $('#create-button').on('click', addTask);
     $('#task-table-body').on('click', '.delete-button', deleteTask);
+    $('#task-table-body').on('click', '.complete-button', completeTask );
     getTask();
 }//end readyNow
 
@@ -46,8 +47,11 @@ function getTask() {
             $('#task-table-body').append(`
                 <tr>
                     <td>${task.task}</td>
-                   <td>
+                    <td>
                     <button data-id="${task.id}" class="delete-button">Delete</button>
+                    </td>
+                    <td>
+                    <button data-id="${task.id}" class="complete-button">Complete</button>
                     </td>
                 </tr>
             `);
@@ -65,13 +69,28 @@ function deleteTask() {
     $.ajax({
         type: 'DELETE',
         url: `/tasks/${taskId}`,
-    }).then(function(response){
-        console.log('task deleted!', response );
+    }).then(function (response) {
+        console.log('task deleted!', response);
         getTask();
-    }).catch(function(error){
+    }).catch(function (error) {
         alert('something went wrong with DELETE!');
-        console.log('something went wrong with DELETE', error );
+        console.log('something went wrong with DELETE', error);
 
     });
 
 }//end deleteTask
+
+function completeTask(){
+    console.log('in completeTask');
+    const taskId = $(this).data('id');
+    $.ajax({
+        method: 'PUT',
+        url: `/tasks/${taskId}`,
+    }).then( function(response){
+        console.log('Task completed!');
+        getTask();
+    }).catch(function(error){
+        console.log('error with PUT', error );
+        alert('You have an error with your PUT!');
+    });
+}//end completeTask

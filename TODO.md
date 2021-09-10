@@ -16,16 +16,16 @@
     [x] GET route (server)
     [x] POST route (server)
     [] PUT route (server)
-    [] DELETE route (server)
+    [x] DELETE route (server)
 [x] client side AJAX GET
 [x] client side AJAX POST
 [] client side AJAX PUT
     - need 'complete' button 
-[] client side AJAX DELETE
+[x] client side AJAX DELETE
     - need 'delete' button
 [x] display the tasks on the DOM and on page load
 [] color change for completed task button
-[] delete needs to delete from DOM and database
+[x] delete needs to delete from DOM and database
 [] add some CSS/Bootstrap
 [] write readme - add some screengrabs
 [] deploy to Heroku
