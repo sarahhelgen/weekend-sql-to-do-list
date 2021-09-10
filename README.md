@@ -1,13 +1,12 @@
-# Full Stack To Do List
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+## Full Stack To Do List
 
 ## Description
 Duration: 2 Day Sprint
 
-Built a to-do list app with full CRUD. These are the steps I took to get there:
+Built a to-do list app with full CRUD. A user can input their tasks into the app, and they will display on the DOM. A user can delete a task, which will both delete it from the DOM as well as the datebase and also click complete, which will change the CSS and update the task as completed in the database.
 
-[x] install express and pg
+These are the steps I took to get there:
+
 [x] build folder structure for app
 [x] create HTML skeleton for user to input to do list
     -input for task
@@ -44,11 +43,18 @@ Built a to-do list app with full CRUD. These are the steps I took to get there:
 
 ## Prerequisites
 
-* Node
-* Express
-* PG
+* Node.js
 * Postgresql
 
-Your project description goes here. What problem did you solve? How did you solve it?
+## Installation
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+1. Create a database named 'weekend-to-do-app'
+2. The queries in the 'database.sql' file are all set up for you. This project was built in Postgres, so you will need to have that installed and I'd recommed using Postico to run queries, as that is what I used to test my data.
+3. Open your code editor and run an npm install in your terminal
+4. Run npm start to start your server
+5. Open on localhost:5000
+
+## Built With
+* HTML, CSS, Javascript, JQuery, Node.js, Express, PG, Postgresql
+
+
