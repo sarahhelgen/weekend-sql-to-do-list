@@ -38,7 +38,7 @@ function getTask() {
         type: 'GET',
         url: '/tasks',
     }).then(function (response) {
-        console.log('GET /songs', response )
+        console.log('GET /tasks', response )
         //append data to DOM here
         for( task of response ){
             console.log(`The task is: ${task}`);
@@ -52,8 +52,4 @@ function getTask() {
         console.log('error with GET /tasks', error);
         alert('something went wrong with your GET!');
     });
-    
-    for( task of response ){
-
-    }//end for loop
 }//end getTask
