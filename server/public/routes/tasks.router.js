@@ -18,18 +18,29 @@ pool.on('error', (error) => {
     console.log('Unable to connect to postgres!', error);
 });
 
-router.post('/', (req,res) =>{
+router.post('/', (req, res) => {
     console.log('in /tasks POST');
     const newTask = req.body;
     console.log(`the new task is: ${newTask}`);
     const queryText = `INSERT INTO "tasks" ("task") VALUES($1);`;
-    pool.query(queryText, [newTask.task]).then((result) =>{
+    pool.query(queryText, [newTask.task]).then((result) => {
         res.sendStatus(200);
-    }).catch((error) =>{
+    }).catch((error) => {
         res.sendStatus(500);
         console.log('error with POST /tasks!');
     });
 
+});
+
+router.get('/', (req, res) => {
+    console.log('in /tasks GET');
+    const queryText = `SELECT * FROM "tasks" ORDER BY "task" LIMIT 100;`;
+    pool.query(queryText).then((result) =>{
+        res.send(result.rows);
+    }).catch((error) =>{
+        res.sendStatus(500);
+        console.log('error with /tasks GET', error );
+    });
 });
 
 

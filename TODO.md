@@ -10,15 +10,15 @@
 [x] create ERD for database:
     - id
     - 'task' varchar(300)
-    - complete (boolean)
+    - complete (boolean) - default to false
 [x] create table and insert dummy data in database.sql file
 [x] create router for tasks
     [] GET route (server)
-    [] POST route (server)
+    [x] POST route (server)
     [] PUT route (server)
     [] DELETE route (server)
 [] client side AJAX GET
-[] client side AJAX POST
+[x] client side AJAX POST
 [] client side AJAX PUT
     - need 'complete' button 
 [] client side AJAX DELETE
