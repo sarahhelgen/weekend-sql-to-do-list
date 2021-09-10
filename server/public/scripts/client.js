@@ -8,7 +8,7 @@ function readyNow() {
     console.log('DOM Ready!');
     $('#create-button').on('click', addTask);
     $('#task-table-body').on('click', '.delete-button', deleteTask);
-    $('#task-table-body').on('click', '.complete-button', completeTask );
+    $('#task-table-body').on('click', '.complete-button', completeTask);
     getTask();
 }//end readyNow
 
@@ -55,7 +55,11 @@ function getTask() {
                     </td>
                 </tr>
             `);
+            if (task.complete) {
+                $('.complete-button').css('background-color', 'green');
+            }//end complete
         }//end for loop
+
     }).catch(function (error) {
         console.log('error with GET /tasks', error);
         alert('something went wrong with your GET!');
@@ -80,17 +84,17 @@ function deleteTask() {
 
 }//end deleteTask
 
-function completeTask(){
+function completeTask() {
     console.log('in completeTask');
     const taskId = $(this).data('id');
     $.ajax({
         method: 'PUT',
         url: `/tasks/${taskId}`,
-    }).then( function(response){
+    }).then(function (response) {
         console.log('Task completed!');
         getTask();
-    }).catch(function(error){
-        console.log('error with PUT', error );
+    }).catch(function (error) {
+        console.log('error with PUT', error);
         alert('You have an error with your PUT!');
     });
 }//end completeTask
