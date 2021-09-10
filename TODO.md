@@ -7,11 +7,11 @@
     -submit button 
 [x] build server with boilerplate language
 [x] connect server to database with pg pool
-[] create ERD for database:
+[x] create ERD for database:
     - id
     - 'task' varchar(300)
     - complete (boolean)
-[] create table and insert dummy data in database.sql file
+[x] create table and insert dummy data in database.sql file
 [x] create router for tasks
     [] GET route (server)
     [] POST route (server)
