@@ -15,11 +15,11 @@
 [x] create router for tasks
     [x] GET route (server)
     [x] POST route (server)
-    [] PUT route (server)
+    [x] PUT route (server)
     [x] DELETE route (server)
 [x] client side AJAX GET
 [x] client side AJAX POST
-[] client side AJAX PUT
+[x] client side AJAX PUT
     - need 'complete' button 
 [x] client side AJAX DELETE
     - need 'delete' button
