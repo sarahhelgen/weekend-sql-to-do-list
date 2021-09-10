@@ -44,20 +44,17 @@ function getTask() {
         //append data to DOM here
         for (task of response) {
             console.log(`The task is: ${task}`);
+            // // if (task.complete) {
+            // //     $('.complete-button').css('background-color', 'green');
+            // }//end check
             $('#task-table-body').append(`
                 <tr>
                     <td>${task.task}</td>
-                    <td>
-                    <button data-id="${task.id}" class="delete-button">Delete</button>
-                    </td>
-                    <td>
-                    <button data-id="${task.id}" class="complete-button">Complete</button>
-                    </td>
+                    <td><button data-id="${task.id}" class="delete-button">Delete</button></td>
+                    <td><button data-id="${task.id}" class="complete-button">Complete</button></td>  
                 </tr>
             `);
-            if (task.complete) {
-                $('.complete-button').css('background-color', 'green');
-            }//end complete
+
         }//end for loop
 
     }).catch(function (error) {
