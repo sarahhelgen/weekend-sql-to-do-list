@@ -7,6 +7,7 @@ $(document).ready(readyNow);
 function readyNow() {
     console.log('DOM Ready!');
     $('#create-button').on('click', addTask);
+    $('#task-table-body').on('click', '.delete-button', deleteTask);
     getTask();
 }//end readyNow
 
@@ -38,13 +39,16 @@ function getTask() {
         type: 'GET',
         url: '/tasks',
     }).then(function (response) {
-        console.log('GET /tasks', response )
+        console.log('GET /tasks', response)
         //append data to DOM here
-        for( task of response ){
+        for (task of response) {
             console.log(`The task is: ${task}`);
             $('#task-table-body').append(`
                 <tr>
-                    <td>${task.task}</td?
+                    <td>${task.task}</td>
+                   <td>
+                    <button data-id="${task.id}" class="delete-button">Delete</button>
+                    </td>
                 </tr>
             `);
         }//end for loop
@@ -53,3 +57,21 @@ function getTask() {
         alert('something went wrong with your GET!');
     });
 }//end getTask
+
+function deleteTask() {
+    console.log('in deleteTask'); //click handler working
+    const taskId = $(this).data('id');
+    console.log(`$(this) is: ${this}`);
+    $.ajax({
+        type: 'DELETE',
+        url: `/tasks/${taskId}`,
+    }).then(function(response){
+        console.log('task deleted!', response );
+        getTask();
+    }).catch(function(error){
+        alert('something went wrong with DELETE!');
+        console.log('something went wrong with DELETE', error );
+
+    });
+
+}//end deleteTask

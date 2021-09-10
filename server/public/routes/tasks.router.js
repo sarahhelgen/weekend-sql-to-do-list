@@ -35,11 +35,24 @@ router.post('/', (req, res) => {
 router.get('/', (req, res) => {
     console.log('in /tasks GET');
     const queryText = `SELECT * FROM "tasks" ORDER BY "task" LIMIT 100;`;
-    pool.query(queryText).then((result) =>{
+    pool.query(queryText).then((result) => {
         res.send(result.rows);
-    }).catch((error) =>{
+    }).catch((error) => {
         res.sendStatus(500);
-        console.log('error with /tasks GET', error );
+        console.log('error with /tasks GET', error);
+    });
+});
+
+router.delete('/:id', (req, res) => {
+    console.log('in /tasks DELETE');
+    console.log('req.params is:', req.params);
+    const taskId = req.params.id;
+    const queryText = `DELETE FROM "tasks" WHERE id= $1;`;
+    pool.query(queryText, [taskId]).then((result) => {
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log('error with /tasks DELETE', error);
+        res.sendStatus(500);
     });
 });
 

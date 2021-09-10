@@ -23,7 +23,7 @@
     - need 'complete' button 
 [] client side AJAX DELETE
     - need 'delete' button
-[] display the tasks on the DOM and on page load
+[x] display the tasks on the DOM and on page load
 [] color change for completed task button
 [] delete needs to delete from DOM and database
 [] add some CSS/Bootstrap
