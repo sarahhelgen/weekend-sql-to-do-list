@@ -9,16 +9,16 @@ To see the app on the web, visit: <heroku link>
 
 These are the steps I took to get there:
 
-[x] build folder structure for app
-[x] create HTML skeleton for user to input to do list
-    -input for task
-    -submit button 
-[x] build server with boilerplate language
-[x] connect server to database with pg pool
-[x] create ERD for database:
-    - id
-    - 'task' varchar(300)
-    - complete (boolean) - default to false
+- [x] build folder structure for app
+- [x] create HTML skeleton for user to input to do list
+    * input for task
+    * submit button 
+- [x] build server with boilerplate language
+- [x] connect server to database with pg pool
+- [x] create ERD for database:
+    * id
+    * 'task' varchar(300)
+    * complete (boolean) - default to false
 [x] create table and insert dummy data in database.sql file
 [x] create router for tasks
     [x] GET route (server)
