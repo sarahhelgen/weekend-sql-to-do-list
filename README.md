@@ -36,10 +36,8 @@ These are the steps I took to get there:
 - [x] delete needs to delete from DOM and database
 - [x] add some CSS/Bootstrap
 
-
-
-
 ## Screen Shots
+! [app image] (/images/screenshot.png)
 
 
 ## Prerequisites
@@ -56,7 +54,7 @@ These are the steps I took to get there:
 5. Open on localhost:5000
 
 ## Built With
-* HTML, CSS, Javascript, JQuery, Node.js, Express, PG, Postgresql
+* HTML, CSS, Bootstrap, Javascript, JQuery, Node.js, Express, PG, Postgresql
 
 ## Acknowledgement
 
