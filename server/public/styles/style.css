@@ -1,0 +1,56 @@
+body{
+    background-color: #e09f3e;
+    padding: 20px;
+}
+
+.table-hover {
+    background-color: #fff3b0 ;
+    font-family: "Work Sans";
+    font-weight: 300;
+    font-display: light;
+    
+    
+}
+
+.tr-background-color {
+    background-color: #335c67;
+    color: white;
+}
+
+
+
+.delete-button {
+    background-color: #9e2a2b;
+    color: white;
+}
+
+.complete-button {
+    background-color: #9e2a2b;
+    color: white;
+}
+
+.need-padding {
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: "Work Sans";
+    font-weight: bold;
+}
+
+.btn-outline-secondary{
+    background-color:#9e2a2b;
+    color: white;
+}
+
+.input-group {
+    font-family: "Work Sans";
+    font-weight: 300;
+}
+
+.bi-check-square{
+    float: left;
+}
+
