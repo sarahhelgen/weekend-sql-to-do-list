@@ -19,24 +19,23 @@ These are the steps I took to get there:
     * id
     * 'task' varchar(300)
     * complete (boolean) - default to false
-[x] create table and insert dummy data in database.sql file
-[x] create router for tasks
-    [x] GET route (server)
-    [x] POST route (server)
-    [x] PUT route (server)
-    [x] DELETE route (server)
-[x] client side AJAX GET
-[x] client side AJAX POST
-[x] client side AJAX PUT
-    - need 'complete' button 
-[x] client side AJAX DELETE
-    - need 'delete' button
-[x] display the tasks on the DOM and on page load
-[] color change for completed task button - in progress
-[x] delete needs to delete from DOM and database
-[] add some CSS/Bootstrap
-[] write readme - add some screengrabs
-[] deploy to Heroku
+- [x] create table and insert dummy data in database.sql file
+- [x] create router for tasks
+    * GET route (server)
+    * [x] POST route (server)
+    * [x] PUT route (server)
+    * [x] DELETE route (server)
+- [x] client side AJAX GET
+- [x] client side AJAX POST
+- [x] client side AJAX PUT
+    * need 'complete' button 
+- [x] client side AJAX DELETE
+    * need 'delete' button
+- [x] display the tasks on the DOM and on page load
+- [ ] color change for completed task button - in progress
+- [x] delete needs to delete from DOM and database
+- [x] add some CSS/Bootstrap
+
 
 
 
