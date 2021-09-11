@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/sarahhelgen/weekend-sql-to-do-list#readme",
   "dependencies": {
-    "bootstrap": "^5.1.1",
     "express": "^4.17.1",
     "pg": "^8.7.1"
   }
