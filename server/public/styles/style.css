@@ -1,9 +1,11 @@
 body{
     background-color: #e09f3e;
+    padding: 20px;
 }
 
 .table-hover {
     background-color: #fff3b0 ;
+    
 }
 
 .tr-background-color {
@@ -22,3 +24,17 @@ body{
     background-color: #9e2a2b;
     color: white;
 }
+
+.need-padding {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.btn-outline-secondary{
+    background-color:#9e2a2b;
+    color: white;
+}
+
