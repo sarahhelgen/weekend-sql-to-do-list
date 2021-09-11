@@ -1,4 +1,4 @@
-## Full Stack To Do List
+## Full Stack To Do List App
 
 ## Description
 Duration: 2 Day Sprint
