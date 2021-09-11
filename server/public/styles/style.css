@@ -5,6 +5,10 @@ body{
 
 .table-hover {
     background-color: #fff3b0 ;
+    font-family: "Work Sans";
+    font-weight: 300;
+    font-display: light;
+    
     
 }
 
@@ -26,15 +30,23 @@ body{
 }
 
 .need-padding {
-    padding: 20px;
+    padding: 15px;
 }
 
 h1 {
     text-align: center;
+    padding: 10px;
+    font-family: "Work Sans";
+    font-weight: bold;
 }
 
 .btn-outline-secondary{
     background-color:#9e2a2b;
     color: white;
+}
+
+.input-group {
+    font-family: "Work Sans";
+    font-weight: 300;
 }
 
