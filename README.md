@@ -32,12 +32,12 @@ These are the steps I took to get there:
 - [x] client side AJAX DELETE
     * need 'delete' button
 - [x] display the tasks on the DOM and on page load
-- [ ] color change for completed task button - in progress
+- [x] strike through text when task is complete
 - [x] delete needs to delete from DOM and database
 - [x] add some CSS/Bootstrap
 
 ## Screen Shots
-![app image] (/images/to-do-app-screen-shot.png)
+![app image] (./images/to-do-app-screen-shot.png)
 
 
 ## Prerequisites
