@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
 
 router.get('/', (req, res) => {
     console.log('in /tasks GET');
-    const queryText = `SELECT * FROM "tasks" ORDER BY "id" ASC LIMIT 100;`;
+    const queryText = `SELECT * FROM "tasks" ORDER BY "id" DESC LIMIT 100;`;
     pool.query(queryText).then((result) => {
         res.send(result.rows);
     }).catch((error) => {
