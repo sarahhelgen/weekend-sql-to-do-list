@@ -1,7 +1,7 @@
 ## Full Stack To Do List App
 
 ## Description
-Duration: 2 Day Sprint
+Duration: 10 -15 hours
 
 Built a to-do list app with full CRUD. A user can input their tasks into the app, and they will display on the DOM. A user can delete a task, which will both delete it from the DOM as well as the datebase and also click complete, which will change the CSS and update the task as completed in the database.
 
@@ -37,7 +37,7 @@ These are the steps I took to get there:
 - [x] add some CSS/Bootstrap
 
 ## Screen Shots
-![app image] (./images/to-do-app-screen-shot.png)
+![app image](./images/to-do-app-screen-shot.png)
 
 
 ## Prerequisites
