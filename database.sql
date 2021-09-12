@@ -6,5 +6,5 @@ CREATE TABLE "tasks"(
 
 INSERT INTO "tasks" ("task", "complete") VALUES 
 ('clean the litter box', 'false'),
-('brush the cat', 'true'),
+('brush the cat', 'false'),
 ('go to the gym', 'false');

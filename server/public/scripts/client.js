@@ -8,7 +8,7 @@ function readyNow() {
     console.log('DOM Ready!');
     $('#create-button').on('click', addTask);
     $('#task-table-body').on('click', '.delete-button', deleteTask);
-    $('#task-table-body').on('click', '.complete-button', completeTask);
+    $('#task-table-body').on('click', '.complete-button', completeTask)
     getTask();
 }//end readyNow
 
@@ -18,7 +18,9 @@ function addTask() {
     //creating task object from user input
     let taskToSend = {
         task: $('#task-input').val(),
+        complete: false,
     }//end taskToSend
+    console.log('after input:', taskToSend );
     $.ajax({
         type: 'POST',
         url: '/tasks',
@@ -44,19 +46,18 @@ function getTask() {
         //append data to DOM here
         for (task of response) {
             console.log(`The task is: ${task}`);
-            // // if (task.complete) {
-            // //     $('.complete-button').css('background-color', 'green');
-            // }//end check
+            $('td').toggleClass('strike-text')
             $('#task-table-body').append(`
                 <tr>
-                    <td>${task.task}</td>
+                    <td class="strike-text">${task.task}</td>
+                    <td><button data-id="${task.id}" class="complete-button">Complete</button></td> 
                     <td><button data-id="${task.id}" class="delete-button">Delete</button></td>
-                    <td><button data-id="${task.id}" class="complete-button">Complete</button></td>  
                 </tr>
             `);
-
+            if(task.complete){
+                $('.strike-text').css('text-decoration', 'line-through')
+            }//end if check
         }//end for loop
-
     }).catch(function (error) {
         console.log('error with GET /tasks', error);
         alert('something went wrong with your GET!');
@@ -83,6 +84,7 @@ function deleteTask() {
 
 function completeTask() {
     console.log('in completeTask');
+    console.log('what is this?', $(this)); //complete button
     const taskId = $(this).data('id');
     $.ajax({
         method: 'PUT',
@@ -94,4 +96,8 @@ function completeTask() {
         console.log('error with PUT', error);
         alert('You have an error with your PUT!');
     });
+   
+
 }//end completeTask
+
+
