@@ -46,7 +46,6 @@ function getTask() {
         //append data to DOM here
         for (task of response) {
             console.log(`The task is: ${task}`);
-            $('td').toggleClass('strike-text')
             $('#task-table-body').append(`
                 <tr>
                     <td class="strike-text">${task.task}</td>
@@ -77,9 +76,7 @@ function deleteTask() {
     }).catch(function (error) {
         alert('something went wrong with DELETE!');
         console.log('something went wrong with DELETE', error);
-
     });
-
 }//end deleteTask
 
 function completeTask() {
@@ -96,8 +93,6 @@ function completeTask() {
         console.log('error with PUT', error);
         alert('You have an error with your PUT!');
     });
-   
-
 }//end completeTask
 
 
