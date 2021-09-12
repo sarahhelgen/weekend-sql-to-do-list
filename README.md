@@ -37,7 +37,7 @@ These are the steps I took to get there:
 - [x] add some CSS/Bootstrap
 
 ## Screen Shots
-! [app image] (/images/screenshot.png)
+![app image] (/images/to-do-app-screen-shot.png)
 
 
 ## Prerequisites

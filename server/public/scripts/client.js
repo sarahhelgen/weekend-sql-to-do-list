@@ -20,7 +20,7 @@ function addTask() {
         task: $('#task-input').val(),
         complete: false,
     }//end taskToSend
-    console.log('after input:', taskToSend );
+    console.log('after input:', taskToSend ); //checking data being sent to server VIA post
     $.ajax({
         type: 'POST',
         url: '/tasks',
@@ -35,6 +35,8 @@ function addTask() {
     });
 }//end addTask
 
+
+//function to retrieve task data from db
 function getTask() {
     console.log('in getTask');
     $('#task-table-body').empty();
@@ -63,6 +65,8 @@ function getTask() {
     });
 }//end getTask
 
+
+//deletes tasks from db
 function deleteTask() {
     console.log('in deleteTask'); //click handler working
     const taskId = $(this).data('id');
@@ -79,6 +83,7 @@ function deleteTask() {
     });
 }//end deleteTask
 
+//updates tasks in db
 function completeTask() {
     console.log('in completeTask');
     console.log('what is this?', $(this)); //complete button
