@@ -5,7 +5,7 @@ Duration: 10 -15 hours
 
 Built a to-do list app with full CRUD. A user can input their tasks into the app, and they will display on the DOM. A user can delete a task, which will both delete it from the DOM as well as the datebase and also click complete, which will change the CSS and update the task as completed in the database.
 
-To see the app on the web, visit: <heroku link>
+To see the app on the web, visit: https://enigmatic-stream-22911.herokuapp.com/
 
 These are the steps I took to get there:
 
