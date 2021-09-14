@@ -54,3 +54,7 @@ h1 {
     float: left;
 }
 
+.task-name{
+    text-decoration: line-through;
+}
+
