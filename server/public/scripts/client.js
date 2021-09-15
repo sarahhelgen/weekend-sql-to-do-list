@@ -50,16 +50,13 @@ function getTask() {
             console.log(`The task is: ${task}`);
             $('#task-table-body').append(`
                 <tr>
-                    <td>${task.task}</td>
+                    <td class= ${task.complete && "completed-task" }>${task.task}</td>
                     <td><button data-id="${task.id}" class="complete-button">Complete</button></td> 
                     <td><button data-id="${task.id}" class="delete-button">Delete</button></td>
                 </tr>
             `);
-            if (task.complete){
-                console.log('this is', $(this).parent());
-                const taskName = $(this.parent());
-                taskName.addClass('strike-through');
-            }//end complete check
+    
+            
         }//end for loop
     }).catch(function (error) {
         console.log('error with GET /tasks', error);

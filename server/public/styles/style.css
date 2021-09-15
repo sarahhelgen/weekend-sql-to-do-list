@@ -54,7 +54,8 @@ h1 {
     float: left;
 }
 
-.task-name{
+.completed-task {
     text-decoration: line-through;
 }
+
 
